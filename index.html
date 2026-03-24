@@ -210,20 +210,15 @@
         <!--Kontak-->
         <section id="Kontak" class="contact">
             <h2>Kontak 📨</h2>
-            <form class="contact-form">
-                <div class="input-group">
-                    <label>Nama</label>
-                    <input type="text" placeholder="Masukkan nama Anda" required>
-                </div>
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="Masukkan email Anda" required>
-                </div>
-                <div class="input-group">
-                    <label>Pesan</label>
-                    <textarea rows="5" placeholder="Tulis pesan..." required></textarea>
-                </div>
-                <button type="submit" class="btn">Kirim Pesan</button>
+            <form action="https://formsubmit.co/mridhoadha25@gmail.com" method="POST">
+                <input type="text" name="nama" placeholder="Masukkan nama Anda" required>
+                <input type="email" name="email" placeholder="Masukkan email Anda" required>
+                <textarea name="pesan" placeholder="Tulis pesan..." required></textarea>
+                <button type="submit">Kirim Pesan</button>
+                
+                <!-- Optional -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://ridho-my-id.vercel.app/">
             </form>
         </section>
 

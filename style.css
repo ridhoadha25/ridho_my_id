@@ -538,94 +538,34 @@ p{
 @media (min-width:1024px){.project-container{grid-template-columns:repeat(3,1fr);}}
 
 /* ===================== */
-/*     CONTACT FORM      */
+/*         KONTAK        */
 /* ===================== */
+#Kontak { padding:60px 20px; background:#f8fafc; text-align:center; }
 
-.contact {
-    padding: 50px 20px;
-    background: #f4f7fb;
-    display: flex;
-    justify-content: center;
-}
+#Kontak h2 { font-size:32px; margin-bottom:30px; color:#1e293b; }
 
 .contact-form {
-    width: 100%;
-    max-width: 500px;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    border: 1px solid #e0e0e0;
+    max-width:360px;
+    margin:auto;
+    padding:25px;
+    background:#fff;
+    border:1px solid #000;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    transition:0.3s ease;
 }
 
-/* Label */
-.contact-form label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
-    color: #333;
-}
+.contact-form:hover { transform:translateY(-6px); border-color:#000; }
 
-/* Input & Textarea */
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 18px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    transition: 0.3s;
-}
+.input-group { display:flex; flex-direction:column; text-align:left; }
+.input-group label { font-weight:600; margin-bottom:5px; color:#334155; }
+.input-group input, .input-group textarea { width:100%; padding:10px; border:1.5px solid #cbd5e1; font-size:14px; outline:none; transition:0.3s; }
+.input-group input:focus, .input-group textarea:focus { border-color:#000; background:#f1f5f9; }
 
-/* Focus effect */
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #3b82f6;
-    outline: none;
-    box-shadow: 0 0 5px rgba(59,130,246,0.3);
-}
+.btn { padding:10px; border:2px solid #2d4368; background:transparent; color:#2d4368; cursor:pointer; font-size:15px; transition:0.3s; }
+.btn:hover { background:#2d4368; color:#fff; }
 
-/* Textarea khusus */
-.contact-form textarea {
-    min-height: 120px;
-    resize: none;
-}
-
-/* Button */
-.contact-form button {
-    width: 100%;
-    padding: 12px;
-    background: #3b82f6;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* Hover button */
-.contact-form button:hover {
-    background: #2563eb;
-    transform: translateY(-2px);
-}
-
-/* Klik effect */
-.contact-form button:active {
-    transform: scale(0.97);
-}
-
-/* ===================== */
-/*   RESPONSIVE MOBILE   */
-/* ===================== */
-
-@media (max-width: 600px) {
-    .contact-form {
-        padding: 20px;
-    }
-}
 /* ===================== */
 /*       CONTACT INFO ALT */
 /* ===================== */

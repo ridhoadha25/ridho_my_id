@@ -208,17 +208,19 @@
         </section>
 
         <!--Kontak-->
-        <section id="Kontak" class="contact">
-            <h2>Kontak 📨</h2>
-            <form action="https://formsubmit.co/mridhoadha25@gmail.com" method="POST">
+        <section class="contact">
+            <h2> Kontak</h2>
+            <form class="contact-form" action="https://formsubmit.co/mridhoadha25@gmail.com" method="POST">
+                <label>Nama</label>
                 <input type="text" name="nama" placeholder="Masukkan nama Anda" required>
-                <input type="email" name="email" placeholder="Masukkan email Anda" required>
-                <textarea name="pesan" placeholder="Tulis pesan..." required></textarea>
-                <button type="submit">Kirim Pesan</button>
                 
-                <!-- Optional -->
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://ridho-my-id.vercel.app/">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Masukkan email Anda" required>
+                
+                <label>Pesan</label>
+                <textarea name="pesan" placeholder="Tulis pesan..." required></textarea>
+                
+                <button type="submit">Kirim Pesan</button>
             </form>
         </section>
 

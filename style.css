@@ -20,8 +20,8 @@ html, body {
 /*         BODY          */
 /* ===================== */
 body {
-    background: linear-gradient(to right, #eef2f3, #dfe9f3);
-    color: white;
+    background: #ffffff;
+    color: black;
     line-height: 1.6;
 }
 

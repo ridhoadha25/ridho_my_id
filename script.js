@@ -1,12 +1,12 @@
 const toggle = document.getElementById("menu-toggle");
 const navbar = document.getElementById("navbar");
 
-// Toggle menu burger
+// Toggle burger menu
 toggle.addEventListener("click", () => {
-    toggle.classList.toggle("active"); // buat ikon silang
-    navbar.classList.toggle("active"); // buka/tutup menu
+    toggle.classList.toggle("active"); // create cross icon
+    navbar.classList.toggle("active"); // open/close menu
 
-    // Tutup menu saat klik link
+    // Close menu when link is clicked
     document.querySelectorAll("nav a").forEach(link => {
         link.addEventListener("click", () => {
             navbar.classList.remove("active");
@@ -15,7 +15,7 @@ toggle.addEventListener("click", () => {
     });
 });
 
-// Animasi klik gambar profil
+// Profile image click animation
 const profileImg = document.querySelector(".hero-left img");
 
 profileImg.addEventListener("click", () => {
